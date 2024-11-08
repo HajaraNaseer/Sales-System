@@ -1,36 +1,66 @@
 header {
-  background-color: rgb(47, 10, 116);
+  background-color: #482882;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100px;
 }
 h1 {
   color: white;
-  text-align: left;
-  padding: 20px;
+  padding-top: 10px;
+  padding-left: 300px;
+  /* padding: 300px; */
 }
 
-nav {
-  position: fixed;
-  background-color: #693fb8;
+.side-bar {
+  position: sticky;
+  background-color: #6638ba;
   width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+.logo {
   text-align: center;
-  padding: 20px;
+  font-size: 20px;
+  padding: 10px;
+  padding-top: 15px;
+  margin: 11%;
+  padding-left: 5px;
+}
+.menu {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  padding: 1rem;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+.menu li:hover {
+  background: #e0e0e058;
 }
 a {
   color: white;
-  font-size: 20px;
   padding: 20px;
   text-align: center;
   text-decoration: none;
 }
-a:hover {
+/* a:hover {
   color: yellow;
-  text-decoration: underline;
-}
+  text-decoration: none;
+} */
 body {
-  background-color: rgb(230, 241, 247);
+  background-color: rgb(241, 239, 239);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -43,11 +73,12 @@ h2 {
 }
 .form-section {
   display: none;
-  background-color: white;
+  background-color: rgb(255, 252, 252);
   border-radius: 6px;
-  width: 500px;
+  /* width: 500px; */
   text-align: center;
   padding: 10px;
+  flex-direction: column;
 }
 .input-group {
   display: flex;
@@ -60,7 +91,7 @@ label {
 }
 
 input {
-  padding-left: 125px;
+  /* padding-left: 125px; */
 }
 .form-section:target {
   display: block;
@@ -68,7 +99,7 @@ input {
 }
 
 footer {
-  background-color: rgb(47, 10, 116);
+  background-color: #482882;
   position: fixed;
   bottom: 0;
   left: 0;
